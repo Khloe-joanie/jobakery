@@ -4,6 +4,7 @@ import React, { Component } from "react";
 import BannerOne from "./BannerOne";
 import GalImages from "./GalImages";
 import galleryimgs from "./GalleryData";
+import image from "../images/cake.jpg";
 
 class Home extends Component {
   render() {
@@ -15,11 +16,7 @@ class Home extends Component {
           <h1 className="mytitles">Recipe of the week</h1>
           <div className="row" style={{ marginBottom: "5em" }}>
             <div className="col-md-6">
-              <img
-                src="../../images/cake.jpg"
-                className="recipeimg"
-                alt="About Us Image"
-              />
+              <img src={image} className="recipeimg" alt="About Us Image" />
             </div>
             <div className="col-md-6 ">
               <h2 style={{ color: "#ff6600" }}>Chocolate Fudge Cake</h2>

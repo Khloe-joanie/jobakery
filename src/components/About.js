@@ -2,7 +2,7 @@
 
 import React, { Component } from "react";
 import BannerTwo from "./BannerTwo";
-// import abimg from "../public/about.png";
+import abimg from "../images/aboutus.png";
 
 class About extends Component {
   render() {
@@ -13,11 +13,7 @@ class About extends Component {
           <h1 className="mytitles">About Us</h1>
           <div className="row">
             <div className="col-md-6">
-              <img
-                src="../../images/aboutus.png"
-                style={{ width: "100%" }}
-                alt="About Us Image"
-              />
+              <img src={abimg} style={{ width: "100%" }} alt="About Us Image" />
             </div>
             <div className="col-md-6">
               <h1 className="abus">
