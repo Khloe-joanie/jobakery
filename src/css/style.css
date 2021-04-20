@@ -20,6 +20,16 @@ body {
   src: local("Romantica Regular"), url("Romantica-RpXpW.woff") format("woff");
 }
 
+.navbar-light .navbar-toggler-icon {
+  background-image: url("../images/menu-icon.png");
+  height: 30px;
+  width: 30px;
+  margin-top: -1em;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  background-color: rgba(0, 0, 0, 1);
+}
 .content {
   min-height: 100vh;
   width: 100%;
@@ -42,11 +52,133 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 .recipe {
-  width: 80%;
+  /* width: 80%; */
   line-height: 2em;
   padding-top: 1em;
-  height: 4em;
+  /* height: 4em; */
 }
+/*Homepage and titles*/
+.choc {
+  color: rgb(255, 102, 0);
+}
+.mh {
+  margin-top: 0em;
+}
+/*Homepage and titles*/
+/*My @medias*/
+
+@media only screen and (max-width: 320px) {
+}
+@media only screen and (max-width: 360px) {
+  .mylogo {
+    margin-top: -17px;
+  }
+  .abus {
+    line-height: 1.5em;
+  }
+  .recipe {
+    /* width: 80%; */
+    line-height: 1.5em;
+    padding-top: 0.5em;
+    /* height: 4em; */
+  }
+  .choc {
+    color: rgb(255, 102, 0);
+    padding-top: 1em;
+  }
+  .welcome {
+    position: absolute;
+    top: 47%;
+    left: 54%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: "Romantica Regular";
+    color: #fff;
+    font-size: 4em;
+    font-weight: 900;
+    letter-spacing: 3px;
+    line-height: 1.5em;
+  }
+  .mh {
+    margin-top: 3em;
+  }
+  .self {
+    line-height: 2em;
+    font-size: 23px;
+  }
+  .ess {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 5px;
+    padding-bottom: 1em;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mylogo {
+    margin-top: -17px;
+  }
+  .welcome {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Romantica Regular";
+    color: #fff;
+    font-size: 4em;
+    font-weight: 900;
+    letter-spacing: 3px;
+    width: 100%;
+    text-align: center;
+  }
+  .self {
+    line-height: 2em;
+    font-size: 20px;
+  }
+  .ess {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 5px;
+    padding-bottom: 1em;
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .mylogo {
+    margin-top: -17px;
+  }
+  .welcome {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Romantica Regular";
+    color: #fff;
+    font-size: 4em;
+    font-weight: 900;
+    letter-spacing: 3px;
+    width: 100%;
+    text-align: center;
+  }
+  .self {
+    line-height: 2em;
+    font-size: 20px;
+  }
+  .ess {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 5px;
+    padding-bottom: 1em;
+    font-size: 25px;
+  }
+}
+/*My @medias*/
+
 /*Nav*/
 nav {
   display: flex;
@@ -65,7 +197,7 @@ nav {
 }
 .mynav {
   color: #fff !important;
-  background: rgba(14, 14, 14, 0.64);
+  background: rgba(0, 0, 0, 1);
   float: left;
   position: absolute;
   height: 100px;
@@ -187,10 +319,6 @@ nav {
   transition: 1s;
 }
 .rbut {
-  position: absolute;
-  top: 93%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 100%;
   line-height: 2em;
 }
@@ -241,7 +369,6 @@ nav {
 }
 .ess {
   color: #fff;
-  /* font-family: "Romantica Regular"; */
   text-align: center;
   font-weight: bold;
   letter-spacing: 5px;
@@ -260,10 +387,6 @@ nav {
   color: #fff;
 }
 .self {
-  /* color: #e95c31; */
-  /* text-align: center; */
-  /* font-weight: bold; */
-  padding: 1em;
   line-height: 2em;
 }
 .einfo {
@@ -274,10 +397,6 @@ nav {
 
 /*about*/
 .abus {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 85%;
   line-height: 2em;
 }

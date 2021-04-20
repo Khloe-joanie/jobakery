@@ -6,8 +6,8 @@ import { Navbar, Nav } from "react-bootstrap";
 class MyNav extends Component {
   render() {
     return (
-      <div>
-        <Navbar expand="lg" className="fixed-top mynav">
+      <div className="fixed-top">
+        <Navbar expand="lg" className="mynav" style={{ width: "100%" }}>
           <Navbar.Brand href="#home">
             <Link className="mylogo" to="/">
               Jo's
